@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>Student Registration Form</h1>
+  </header>
+
+  <form id="registrationForm">
+    <input type="hidden" id="editingRowIndex" value="-1">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter E-mail ID" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter Phone No" required />
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select Gender--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" placeholder="Enter the Course Name" required />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>Registered Students</h2>
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>Date of Birth</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Registered students will appear here -->
+    </tbody>
+  </table>
+
+  <footer>
+    &copy; 2025 Student Registration Portal | Designed by Chitra Rajan
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
